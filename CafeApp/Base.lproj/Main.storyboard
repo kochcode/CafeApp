@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ofr-6H-SW2">
-                                <rect key="frame" x="0.0" y="59" width="414" height="195"/>
+                                <rect key="frame" x="0.0" y="59" width="414" height="233"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Cafe!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="02n-Xn-ZVS">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="37"/>
@@ -54,62 +54,34 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="sw7-ar-IVF">
-                                        <rect key="frame" x="0.0" y="110" width="414" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BmO-qi-Tmj">
+                                        <rect key="frame" x="0.0" y="110" width="414" height="123"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Coffee- $6.49" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DIt-zp-5kB">
-                                                <rect key="frame" x="0.0" y="0.0" width="104.5" height="30"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wUF-Vh-xzi">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="123"/>
+                                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="Scroll for more Coffee- $6.49 Bagel- $3.99 Muffin- $2.99 Cocoa- $6.99 Sandwich- $8.49 Tea- $4.99" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ogo-Hb-TWq">
+                                                <rect key="frame" x="32" y="0.0" width="332" height="123"/>
                                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bagel- $3.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hez-yV-dh4">
-                                                <rect key="frame" x="154.5" y="0.0" width="105" height="30"/>
-                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Muffin-$2.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7IF-vR-QAq">
-                                                <rect key="frame" x="309.5" y="0.0" width="104.5" height="30"/>
-                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="yuX-rm-G1J">
-                                        <rect key="frame" x="0.0" y="165" width="414" height="30"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cocoa- $6.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CfH-JD-eaT">
-                                                <rect key="frame" x="0.0" y="0.0" width="104.5" height="30"/>
-                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sandwich-$8.49" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tRP-b3-Upy">
-                                                <rect key="frame" x="154.5" y="0.0" width="105" height="30"/>
-                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tea-$4.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hnt-gW-3kG">
-                                                <rect key="frame" x="309.5" y="0.0" width="104.5" height="30"/>
-                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Uwp-Bg-cxi">
+                                                <rect key="frame" x="364" y="0.0" width="50" height="123"/>
+                                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dC9-sZ-qJ8">
-                                <rect key="frame" x="93.5" y="304" width="227" height="34"/>
+                                <rect key="frame" x="93.5" y="342" width="227" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Item Here" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xH4-dM-Q7d">
                                         <rect key="frame" x="0.0" y="0.0" width="129" height="34"/>
@@ -128,36 +100,98 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Items in Cart:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1kx-1M-R2X">
-                                <rect key="frame" x="126" y="384" width="163" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="aQ4-b0-vKO">
+                                <rect key="frame" x="126" y="542" width="163" height="238"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Items in Cart:" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1kx-1M-R2X">
+                                        <rect key="frame" x="0.0" y="0.0" width="163" height="143"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Total:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vms-IU-EUA">
+                                        <rect key="frame" x="0.0" y="150" width="163" height="88"/>
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1kx-1M-R2X" firstAttribute="height" secondItem="aQ4-b0-vKO" secondAttribute="height" multiplier="0.6" id="d10-Hq-1jb"/>
+                                </constraints>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password " adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gGZ-0x-45C">
+                                <rect key="frame" x="143" y="774" width="129" height="34"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Items in Cart:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vms-IU-EUA">
-                                <rect key="frame" x="126" y="469" width="163" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HsJ-xv-Xzo">
+                                <rect key="frame" x="0.0" y="814" width="414" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Tw-q6-99y">
+                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="48"/>
+                                        <color key="tintColor" systemColor="systemBrownColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Add to Cart"/>
+                                        <connections>
+                                            <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gbd-Na-OL0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkz-Zl-rid">
+                                        <rect key="frame" x="103.5" y="0.0" width="103.5" height="48"/>
+                                        <color key="tintColor" systemColor="systemBrownColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Remove From Cart"/>
+                                        <connections>
+                                            <action selector="removeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ARw-Eg-bTu"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Item Here" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p9s-um-ddh">
+                                        <rect key="frame" x="207" y="0.0" width="103.5" height="48"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Price Here" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DYz-J6-3iM">
+                                        <rect key="frame" x="310.5" y="0.0" width="103.5" height="48"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dC9-sZ-qJ8" firstAttribute="top" secondItem="ofr-6H-SW2" secondAttribute="bottom" constant="50" id="BeY-vI-iky"/>
-                            <constraint firstItem="ofr-6H-SW2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="Ows-8Z-eNu"/>
-                            <constraint firstItem="ofr-6H-SW2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R6l-5A-pAC"/>
-                            <constraint firstItem="dC9-sZ-qJ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93.5" id="ai7-Ay-bte"/>
-                            <constraint firstAttribute="trailing" secondItem="ofr-6H-SW2" secondAttribute="trailing" id="dAA-F0-nMB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dC9-sZ-qJ8" secondAttribute="trailing" constant="93.5" id="f8a-ap-ddN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aQ4-b0-vKO" secondAttribute="bottom" constant="82" id="1xB-W5-ema"/>
+                            <constraint firstItem="ofr-6H-SW2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="91I-xI-lDQ"/>
+                            <constraint firstAttribute="trailing" secondItem="HsJ-xv-Xzo" secondAttribute="trailing" id="APq-Ko-pVR"/>
+                            <constraint firstItem="dC9-sZ-qJ8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0379464" id="Glk-rh-1nd"/>
+                            <constraint firstItem="dC9-sZ-qJ8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HTp-K4-MsH"/>
+                            <constraint firstItem="HsJ-xv-Xzo" firstAttribute="top" secondItem="gGZ-0x-45C" secondAttribute="bottom" constant="6" id="Rpt-AW-rTU"/>
+                            <constraint firstItem="HsJ-xv-Xzo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TNL-zH-cYp"/>
+                            <constraint firstItem="aQ4-b0-vKO" firstAttribute="top" secondItem="dC9-sZ-qJ8" secondAttribute="bottom" constant="166" id="Yb4-fv-Au6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aQ4-b0-vKO" secondAttribute="trailing" constant="125" id="ZbB-Dq-tto"/>
+                            <constraint firstItem="dC9-sZ-qJ8" firstAttribute="top" secondItem="ofr-6H-SW2" secondAttribute="bottom" constant="50" id="aXB-i1-d9w"/>
+                            <constraint firstAttribute="trailing" secondItem="ofr-6H-SW2" secondAttribute="trailing" id="bri-zj-vom"/>
+                            <constraint firstItem="ofr-6H-SW2" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.26" id="eMh-cu-prT"/>
+                            <constraint firstItem="aQ4-b0-vKO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="f4R-43-x1W"/>
+                            <constraint firstItem="ofr-6H-SW2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sgd-q3-JRN"/>
+                            <constraint firstItem="HsJ-xv-Xzo" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zjn-p7-OI8"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cartOutput" destination="1kx-1M-R2X" id="1hc-kH-rjK"/>
                         <outlet property="itemInput" destination="xH4-dM-Q7d" id="UUM-MA-xVi"/>
+                        <outlet property="itemInputDos" destination="p9s-um-ddh" id="cdg-vX-dDg"/>
+                        <outlet property="listOutput" destination="Ogo-Hb-TWq" id="uzS-kH-cZU"/>
+                        <outlet property="passWord" destination="gGZ-0x-45C" id="hxk-Ta-Ys8"/>
+                        <outlet property="priceInput" destination="DYz-J6-3iM" id="pFS-BZ-NJi"/>
+                        <outlet property="totalOutput" destination="vms-IU-EUA" id="xa8-S2-MjH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -173,8 +207,8 @@
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
