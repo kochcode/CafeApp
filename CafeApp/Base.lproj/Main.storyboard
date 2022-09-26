@@ -81,7 +81,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dC9-sZ-qJ8">
-                                <rect key="frame" x="93.5" y="342" width="227" height="34"/>
+                                <rect key="frame" x="1" y="342" width="412.5" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Item Here" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xH4-dM-Q7d">
                                         <rect key="frame" x="0.0" y="0.0" width="129" height="34"/>
@@ -97,6 +97,21 @@
                                         <connections>
                                             <action selector="addCart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yo2-sb-ddK"/>
                                         </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1s-Z9-yaB">
+                                        <rect key="frame" x="227" y="0.0" width="106" height="34"/>
+                                        <color key="tintColor" systemColor="systemBrownColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sort by cost "/>
+                                        <connections>
+                                            <action selector="sortCost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vXH-yn-NgT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHw-Fa-iGW">
+                                        <rect key="frame" x="333" y="0.0" width="79.5" height="34"/>
+                                        <color key="tintColor" systemColor="systemBrownColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sort A-Z"/>
                                     </button>
                                 </subviews>
                             </stackView>
