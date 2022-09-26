@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -80,17 +81,17 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dC9-sZ-qJ8">
-                                <rect key="frame" x="1" y="342" width="412.5" height="34"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dC9-sZ-qJ8">
+                                <rect key="frame" x="0.0" y="342" width="414" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Item Here" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xH4-dM-Q7d">
-                                        <rect key="frame" x="0.0" y="0.0" width="129" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="34"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mY-fr-ONr">
-                                        <rect key="frame" x="129" y="0.0" width="98" height="34"/>
+                                        <rect key="frame" x="103.5" y="0.0" width="103.5" height="34"/>
                                         <color key="tintColor" systemColor="systemBrownColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Add to Cart"/>
@@ -99,19 +100,26 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1s-Z9-yaB">
-                                        <rect key="frame" x="227" y="0.0" width="106" height="34"/>
+                                        <rect key="frame" x="207" y="0.0" width="103.5" height="34"/>
                                         <color key="tintColor" systemColor="systemBrownColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Sort by cost "/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Sort by cost "/>
+                                            </attributedString>
+                                        </buttonConfiguration>
                                         <connections>
-                                            <action selector="sortCost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vXH-yn-NgT"/>
+                                            <action selector="sortCost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YDp-YT-Yqr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHw-Fa-iGW">
-                                        <rect key="frame" x="333" y="0.0" width="79.5" height="34"/>
+                                        <rect key="frame" x="310.5" y="0.0" width="103.5" height="34"/>
                                         <color key="tintColor" systemColor="systemBrownColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Sort A-Z"/>
+                                        <connections>
+                                            <action selector="sortAZ:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ua3-Mr-bGF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -185,6 +193,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aQ4-b0-vKO" secondAttribute="bottom" constant="82" id="1xB-W5-ema"/>
                             <constraint firstItem="ofr-6H-SW2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="91I-xI-lDQ"/>
                             <constraint firstAttribute="trailing" secondItem="HsJ-xv-Xzo" secondAttribute="trailing" id="APq-Ko-pVR"/>
+                            <constraint firstItem="dC9-sZ-qJ8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Fed-mu-G1i"/>
                             <constraint firstItem="dC9-sZ-qJ8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0379464" id="Glk-rh-1nd"/>
                             <constraint firstItem="dC9-sZ-qJ8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HTp-K4-MsH"/>
                             <constraint firstItem="HsJ-xv-Xzo" firstAttribute="top" secondItem="gGZ-0x-45C" secondAttribute="bottom" constant="6" id="Rpt-AW-rTU"/>
@@ -196,6 +205,7 @@
                             <constraint firstItem="ofr-6H-SW2" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.26" id="eMh-cu-prT"/>
                             <constraint firstItem="aQ4-b0-vKO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="f4R-43-x1W"/>
                             <constraint firstItem="ofr-6H-SW2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sgd-q3-JRN"/>
+                            <constraint firstAttribute="trailing" secondItem="dC9-sZ-qJ8" secondAttribute="trailing" id="vZ4-bb-hJO"/>
                             <constraint firstItem="HsJ-xv-Xzo" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zjn-p7-OI8"/>
                         </constraints>
                     </view>

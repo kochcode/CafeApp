@@ -11,7 +11,6 @@ class ViewController: UIViewController {
 
     
     
-    
     @IBOutlet weak var listOutput: UITextView!
     @IBOutlet weak var cartOutput: UITextView!
     @IBOutlet weak var totalOutput: UITextView!
@@ -22,6 +21,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+            view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
         restartMenu()
     }
@@ -51,8 +52,16 @@ class ViewController: UIViewController {
             restartMenu()
         }
     }
+    @IBAction func sortAZ(_ sender: UIButton) {
+        let sortLetItems = items.sorted(by: <)
+        listOutput.text = "Scroll for more"
+        for (key,value) in sortLetItems{
+            listOutput.text = listOutput.text + "\n\(key)- $\(value)"
+        }
+    }
+    
     @IBAction func sortCost(_ sender: UIButton) {
-        let sortCostItems = items.sorted(by: <)
+        let sortCostItems = items.sorted{$0.1 > $1.1}
         listOutput.text = "Scroll for more"
         for (key,value) in sortCostItems{
             listOutput.text = listOutput.text + "\n\(key)- $\(value)"
@@ -64,7 +73,9 @@ class ViewController: UIViewController {
             listOutput.text = listOutput.text + "\n\(key)- $\(value)"
         }
     }
-    
-    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
 }
 
